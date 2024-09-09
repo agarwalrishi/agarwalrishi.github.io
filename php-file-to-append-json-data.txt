@@ -1,0 +1,13 @@
+<?php
+$var = "{'title'='Job 2 insertion','contnet':'Content for synamic job'}";
+$inp = file_get_contents('jobs.json');
+$tempArray = json_decode($inp);
+array_push($tempArray, $var);
+$jsonData = json_encode($tempArray);
+file_put_contents('jobs.json', $jsonData);
+$inp2 = file_get_contents('jobs.json');
+
+$temp=json_decode($inp2);
+echo $temp[2];
+
+?>

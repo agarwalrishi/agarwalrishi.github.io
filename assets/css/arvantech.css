@@ -1,0 +1,511 @@
+body {
+  padding-bottom: 40px;
+}
+/* Customized Navbar*/
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+#navbar
+{
+    border-top: none;
+    border-color: transparent;
+}
+
+.navbar-brand
+{
+    padding-top: 0;
+}
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  border-radius: 0;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  cursor: hand;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: rgba(0, 85, 144, 0.62);
+  border-radius: 3px;
+  cursor: hand;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/*CSS design for sticky navbar after scroll*/
+#navbar-wrapper.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+.sticky-navbar-inverse
+{
+    background-color:rgba(18, 43, 64, 0.61);
+    height: 70px;
+    padding: 10px;
+}
+
+/*Customized carousel slider*/
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing h1
+{
+  color: rgba(18, 43, 64, 0.8);/*#1e6c90*//*#00a1f1*//*rgba(66, 121, 232, 0.7);*/
+}
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 30px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 1px solid rgba(234, 67, 53, 0.44);
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-top: 15px;
+}
+.service-icon
+{
+    margin: 0;
+}
+
+/*leading paragraphs font-size*/
+.lead
+{
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/*Portfolio images size setting*/
+.project-image, .project-image-mobile
+{
+  
+  height: 200px;
+  width: 280px
+}
+.project-image > a > img
+{
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+}
+.project-image > a
+{
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+}
+.project-image-mobile > a > img
+{
+    height: auto;
+    max-height: 100%;
+    width: auto;
+}
+.project-image-overlay 
+{
+    height: 68%;
+    width: 90%;
+    position: absolute;
+    background-color: rgba(18, 43, 64, 0.8);
+    opacity: 0;
+    display:table;
+}
+.project-image-overlay-mobile 
+{
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    background-color: rgba(18, 43, 64, 0.8);
+    opacity: 0;
+    display:table;
+}
+
+.project-image > a:hover .project-image-overlay  
+{ 
+  opacity:0.8; 
+}
+.project-image-mobile > a:hover .project-image-overlay-mobile 
+{ 
+  opacity:0.8; 
+}
+.overlay-centerd {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+.overlay-centerd > h1 {
+    color: #2e6da4;
+}
+
+
+/*Technology images size setting*/
+.tech-image
+{
+  padding: 20px;
+}
+.tech-image > img
+{
+  
+  /*height: 90px;*/
+  width: 60%;
+}
+
+/*Career section css*/
+#arvan-career > .row > .col-md-5 > ul
+{
+  padding: 0;
+}
+#menu-jobs  >li >a
+{
+  list-style: none;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+#arvan-career > .row > .col-md-5 > h2
+{
+  margin-top: 0;
+  font-weight: 200;
+
+}
+
+/*Contact section css*/
+#arvan-contact > .row > .col-md-5 > h2
+{
+  font-weight: 200;
+}
+#arvan-contact > .row > .col-md-7 > h2
+{
+  font-weight: 200;
+}
+#arvan-contact > .row > .col-md-5, .col-md-7 > p
+{
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+ul.social {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+ul.social > li {
+    display: inline;
+    margin: 5px;
+}
+
+ul.social > li > a {
+    font-size: 25px;
+    color: rgba(18, 43, 64, 0.8);
+}
+ul.social > li > a:hover {
+    cursor: pointer;
+}
+
+a:hover
+{
+    cursor: pointer;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 617px) {
+    /* Navbar positioning */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption
+    {
+        margin-bottom: 12%;
+        background-color: rgba(18, 43, 64, 0.61);
+        border-radius: 5px;
+
+    }
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+    .carousel-caption h1
+    {
+        font-size: 90px;
+        font-weight: 300;
+    }
+    .carousel-caption h2
+    {
+        font-size: 60px;
+        font-weight: 300;
+    }
+    .carousel
+    {
+        margin-bottom: 30px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .featurette
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 616px) {
+
+    .carousel-caption
+    {
+        margin-bottom: 60%;
+        background-color: rgba(18, 43, 64, 0.61);
+        border-radius: 5px
+    }
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+    .carousel-caption h1
+    {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .featurette
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 15px;/*120*/
+
+    }
+    .left-service
+    {
+        padding-right: 30px;
+        border-right: 1px solid #FFBC05;
+    }
+
+    .right-service
+    {
+        padding-left: 30px;
+    }
+}
+
+@media (max-height: 616px) {
+
+    .carousel-caption
+    {
+        margin-bottom: 5%;
+        background-color: rgba(18, 43, 64, 0.61);
+        border-radius: 5px
+    }
+
+
+
+}
+
+/*Media queries to change slider images for mobile*/
+@media (max-width: 450px) {
+
+    #firstimg
+    {
+        content: url("../img/smallest_slide1.jpg");
+    }
+    #secondimg
+    {
+        content: url("../img/smallest_slide2.jpg");
+    }
+    #thirdimg
+    {
+        content: url("../img/smallest_slide3.jpg");
+    }
+    #logo
+    {
+        height: 40px;
+        width: 75px;
+    }
+    .navbar-brand
+    {
+        padding-top: 5px;
+    }
+}
+
+/*Career Page*/
+.career-jumbo-conrainer
+{
+  margin-top: 8%;
+    
+  color: #ffffff;
+
+}
+ h2,h1,h3
+{
+  font-weight: 200;
+  
+}
+.career-page-jumbo
+{
+  background-color: rgba(51, 122, 183, 0.88);
+
+}
+.btn-career
+{
+  margin: 20px; 
+  background-color: rgba(0, 85, 144, 0.23);
+  color: white;
+
+}
+.btn-career:hover
+{
+  background-color: rgba(0, 85, 144, 0.62);
+  color: white;
+ 
+}
+
+/*Callouts*/
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
